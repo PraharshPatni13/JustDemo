@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            padding: 10px;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-image: url("radha_krishna.jpg");
+            background-size: cover;
+            backdrop-filter: blur(10px);
+
+        }
+        button{
+            background-color: darkgrey;
+            border: 0px ;
+            border-radius: 4px;
+            margin-left: 5px;
+            transition: all .7s;
+        }
+        button:hover{
+            scale: 1.2;
+            background-color:lightgreen ;
+        }
+        input{
+            border: 3px solid ;
+            border-color: red yellow green transparent;
+            transition: all .7s ;
+        }
+        input:hover{
+            background-color: pink;
+            height: 20px;
+        }
+        p{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+            <label for="num1" style="color:azure">Enter the first number :</label>
+            <input type="text" id="num1" name="num1"><br>
+            <label for="num2" style="color:azure">Enter the second number :</label>
+            <input type="text" id="num2" name="num2"><br>
+        <div class="all button">
+            <button  id="add">Addition</button>
+            <button  id="sub">Subtraction</button>
+            <button  id="div">Division</button>
+            <button  id="mod">Modulus</button>
+            
+        </div>
+            <p id="ans"></p>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>
